@@ -1,0 +1,44 @@
+@api = http://localhost:5000 
+
+GET {{api}}/users
+###
+GET {{api}}/users/608df4c1788d990580c2a463
+
+### Create a user
+POST {{api}}/users
+Content-Type: application/json
+
+{
+    "nombre":  "Jose Manuel",
+    "apellido": "Rios Yamamoto",
+    "correo": "jriosy@uni.pe",
+    "username": "skyline",
+    "password": "12345"
+} 
+
+###
+DELETE {{api}}/users/604bcdd6c347ea2e2cf08fc3
+
+###
+PUT {{api}}/users/604bd4160d6cdb2f20549011 
+Content-Type: application/json
+
+{
+    "username": "Miracle"
+}
+###
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "username": "skyline",
+    "password": "12345"
+<<<<<<< HEAD
+<<<<<<< HEAD
+} 
+=======
+} 
+>>>>>>> e67b553b6eee671752b45798ac2bcf29d30b74ee
+=======
+} 
+>>>>>>> e67b553b6eee671752b45798ac2bcf29d30b74ee
