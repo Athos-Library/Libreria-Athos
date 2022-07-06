@@ -1,5 +1,11 @@
 # Athos
 
+## Grupo 10 - Interacción Humano-Computador CC 451
+
+* Fernando Alonso Zambrano Altamirano
+* Jose Manuel Rios Yamamoto
+* Angel Vidal Larreategui Castro
+
 ## Description
 App that allows users to read online books and save voice notes while reading.
 
@@ -10,12 +16,12 @@ App that allows users to read online books and save voice notes while reading.
 * Voice note taking
 * Voice serching
 
-## Install & run
+## Instalación & ejecución
 
-1. Clone repo
+1. Clonar el repositorio
  	`git clone https://github.com/XFEDERX/Athos.git`
 
-2. Start backend in one terminal.
+2. Iniciar el backend en un terminal y ejecutar los siguientes comandos.
 
   - `cd Athos/backend/`
   
@@ -23,18 +29,10 @@ App that allows users to read online books and save voice notes while reading.
   
   - `npm start`
   
-2. Start backend in other terminal.
+2. Iniciar el frontend en otro terminal nuevo y ejecutar los siguientes comandos.
 
   - `cd Athos/frontend/`
   
   - `npm install`
   
   - `npm start`
-
-
-
-## Troubleshooting 
-
-In newer versions of nodeJs might be required to set:
-
-`export NODE_OPTIONS=--openssl-legacy-provider`
