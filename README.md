@@ -7,19 +7,21 @@
 * Angel Vidal Larreategui Castro
 
 ## Description
-App that allows users to read online books and save voice notes while reading.
 
-## Features
-* Create User account
-* Read gutemberg books
-* Keep track of user's books
-* Voice note taking
-* Voice serching
+Aplicación que permite a los usuarios leer libros en línea y navegar entre las pestañas de la aplicación mediante un comando de voz.
+
+## Características
+
+* Crear cuenta de usuario
+* Leer libros de gutemberg
+* Realizar un seguimiento de los libros del usuario
+* Toma de notas de voz
+* Búsqueda de voz
 
 ## Instalación & ejecución
 
 1. Clonar el repositorio
- 	`git clone https://github.com/XFEDERX/Athos.git`
+ 	`git clone https://github.com/Athos-Library/Libreria-Athos.git`
 
 2. Iniciar el backend en un terminal y ejecutar los siguientes comandos.
 
