@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #DBDFFD;
+  background-color: #7ac7ef;
 }
 img{
   margin: 0;
@@ -70,7 +70,7 @@ a:hover, a:focus {
 /* Formulario de Login y Registro */
 
 .backgroundYellow{
-  background-color: #646FD4;
+  background-color: #7ac7ef;
   width: 100vw;
   height:calc(100vh - 64px);
   padding: 1em;
@@ -114,7 +114,7 @@ a:hover, a:focus {
 /* Banner principal */
 
 .home-slider{
-  background-color: #646FD4;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,1)), url(https://www.bnp.gob.pe/wp-content/uploads/2019/06/CIENCIAS-SOCIALES.jpg);
   width: 100vw;
   height: calc(100vh - 64px);
   display: flex;
@@ -132,14 +132,16 @@ a:hover, a:focus {
 
 .home-slider-welcome--title{
   font-size: 64px;
-  color: #fff;
+  color: #60b1dd;
   line-height: 0%;
+  text-shadow: -2px -2px 2px #000, 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
 }
 
 .home-slider-welcome--phrase{
   font-size: 32px;
   color:#fff;
   margin: 0px;
+  text-shadow: -1.2px -1.2px 1.2px #000, 1.2px 1.2px 1.2px #000, -1.2px 1.2px 1.2px #000, 1.2px -1.2px 1.2px #000;
 }
 
 .home-slider-welcome--button{
@@ -205,6 +207,7 @@ a:hover, a:focus {
   height: calc(100vh - 64px);
   display: flex;
   flex-direction: row;
+  background-color: #7ac7ef;
 }
 
 .home-what-is-athos-text{
@@ -220,15 +223,14 @@ a:hover, a:focus {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  color: #646FD4;
+  color: #1f5979;
 }
 
 .home-what-is-athos-text p{
   font-size: 24px;
-
   margin: 10px;
   align-items: center;
-  color: #646FD4;
+  color: #1f5979;
 }
 
 .home-what-is-athos-image{  
@@ -241,7 +243,7 @@ a:hover, a:focus {
   display: block;
 }
 .home-what-is-athos-image__img:hover {
-  filter: opacity(.7);
+  filter: opacity(.85);
 }
 
 @media screen and (max-width: 720px)  {
@@ -284,18 +286,18 @@ a:hover, a:focus {
   height: calc(100vh - 64px);
   display: flex;
   flex-direction: column;
-  background-color: #DBDFFD;
+  background-color: #7ac7ef;
   justify-content: center;
 }
 
 .home-services__text h2{
   font-size: 32px;
-  color: #646FD4;
+  color: #1f5979;
 }
 
 .home-services__text p{
   font-size: 24px;
-  color: #646FD4;
+  color: #1f5979;
 }
 
 .home-services__containers{
@@ -324,7 +326,7 @@ a:hover, a:focus {
   display: flex;
   flex-direction: column;
   color: #FFF;
-  background-color: #2B1B58;
+  background-color: #2d20a3;
 }
 
 .footer-social-icons{

@@ -114,7 +114,7 @@ const BookContent = (props) => {
       "font-size": "1.2em",
     },
     transciption: {
-      backgroundColor: "#22252C",
+      backgroundColor: "#1f5979",
       fontFamily: "Prata,serif",
       color: "rgb(255, 221, 163)",
 
@@ -187,7 +187,7 @@ const BookContent = (props) => {
           <p>Your browser does not support iframes.</p>
         </iframe>
 
-        <div style={{ backgroundColor: "#22252C" }}>
+        <div style={{ backgroundColor: "#1f5979" }}>
           <div className={classes.container}>
             <form onSubmit={handleSubmit} className={classes.recive}>
               <Microphone setResult={setNote} />

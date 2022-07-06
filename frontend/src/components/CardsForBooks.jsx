@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   root: {
     color: "#C0B3A0",
-    backgroundColor: "#22252c",
+    backgroundColor: "#1f5979",
     maxWidth: 250,
     margin: [40 + "px"],
     "border-radius": "50px",

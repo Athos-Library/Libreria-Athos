@@ -40,7 +40,7 @@ const Account = () => {
       "&:hover":{
         backgroundColor:"#E14658",
       },
-      backgroundColor:"#22252C",
+      backgroundColor:"#1f5979",
       margin:"2em",
       backgroundImage: "none",
       textTransform: "none",

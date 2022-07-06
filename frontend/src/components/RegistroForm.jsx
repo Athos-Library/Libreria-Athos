@@ -28,7 +28,7 @@ export const RegistroForm = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "hsl(50, 70%, 96%)",
+      backgroundColor: "#7ac7ef",
       width: "100vw",
       height: "calc(100vh - 64px)",
       padding: "1em",

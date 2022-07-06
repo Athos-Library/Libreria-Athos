@@ -51,9 +51,10 @@ const Quote = ()=>{
         button:{
             color:"white",
             "&:hover":{
-                backgroundColor:"#E14658",
+                backgroundColor:"#4297c5",
+                color:"black"
               },
-              backgroundColor:"#22252C",
+              backgroundColor:"#1f5979",
               margin:"2em",
               backgroundImage: "none",
               textTransform: "none",

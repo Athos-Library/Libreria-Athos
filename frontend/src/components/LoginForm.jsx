@@ -35,7 +35,7 @@ export const LoginForm = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "#DBDFFD",
+      backgroundColor: "#7ac7ef",
       width: "100vw",
       height: "calc(100vh - 64px)",
       padding: "1em",
@@ -76,7 +76,7 @@ export const LoginForm = () => {
     },
     register: {
       "&:hover": {
-        color: "#646FD4",
+        color: "#1f5979",
       },
     },
     linkRegister: {

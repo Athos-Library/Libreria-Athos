@@ -228,7 +228,7 @@ export const HomeWithoutLogin = () => {
                       <Grid item xs={12} sm={6} lg={4}>
                         <Fade cascade>
                           <Box
-                            bgcolor="#646FD4"
+                            bgcolor="#1f5979"
                             borderRadius="30px"
                             width="250px"
                             height="70px"
@@ -244,7 +244,7 @@ export const HomeWithoutLogin = () => {
                       <Grid item xs={12} sm={6} lg={4}>
                         <Fade cascade>
                           <Box
-                            bgcolor="#646FD4"
+                            bgcolor="#1f5979"
                             borderRadius="30px"
                             width="250px"
                             height="70px"
@@ -260,7 +260,7 @@ export const HomeWithoutLogin = () => {
                       <Grid item xs={12} sm={6} lg={4}>
                         <Fade cascade>
                           <Box
-                            bgcolor="#646FD4"
+                            bgcolor="#1f5979"
                             borderRadius="30px"
                             width="250px"
                             height="70px"

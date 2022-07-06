@@ -17,7 +17,7 @@ import { useHistory } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   offset: theme.mixins.toolbar,
   navbar: {
-    backgroundColor: "#22252C",
+    backgroundColor: "#1f5979",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
