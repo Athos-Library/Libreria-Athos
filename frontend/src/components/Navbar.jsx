@@ -1,9 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link as LinkS } from "react-scroll";
 import { AiFillAudio } from "react-icons/ai";
-
+import { BrowserRouter, Route, Link as LinkS1, Redirect } from "react-router-dom";
 import { AppBar, makeStyles, Toolbar, Hidden, IconButton, Link } from "@material-ui/core"
 import MenuIcon from '@material-ui/icons/Menu';
+import SpeechRecognition, {useSpeechRecognition} from "react-speech-recognition";
+
+/*function App(){
+  const commands = [
+    {
+      command: ["Ir a *", "Abrir *"],
+      callback: (redirectPage) => setRedirectUrl(redirectPage),
+    },
+  ];
+
+  const { transcript } = useSpeechRecognition({ commands });
+  const [redirectUrl, setRedirectUrl] = useState("");
+}*/
 
 const useStyles = makeStyles((theme)=>({
   offset: theme.mixins.toolbar,
@@ -11,7 +24,7 @@ const useStyles = makeStyles((theme)=>({
     backgroundColor: '#1f5979',
     display:'flex',
     flexDirection:'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between', 
     alignItems: 'center',
   },
   navLogo:{
@@ -68,6 +81,9 @@ const Navbar = (props) => {
           </Hidden>
           <Hidden xsDown>              
             <div className={classes.navMenu}>
+
+              <button> 
+              <AiFillAudio/></button>
               <LinkS className={classes.submenu}
                     to="home-slider"
                     spy= {true}
