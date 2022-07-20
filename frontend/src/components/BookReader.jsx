@@ -41,7 +41,7 @@ const BookContent = (props) => {
         setOpen(true);
       }, user.timer * 100);
     }
-    marcarLibro();
+    //marcarLibro();
   }, []);
   const [starValue, setValue] = React.useState(3);
 

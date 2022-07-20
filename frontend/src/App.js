@@ -1,5 +1,8 @@
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { AiFillAudio } from "react-icons/ai";
+import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
+import React, {useState} from "react";
+import SpeechRecognition, { useSpeechRecognition} from "react-speech-recognition";
 
 import { LoginForm } from "./components/LoginForm";
 import { RegistroForm } from "./components/RegistroForm";
@@ -10,10 +13,49 @@ import { MyNotes } from "./components/MyNotes";
 import NotFound from "./containers/NotFound";
 
 function App() {
+  const commands = [
+    {
+      command: ["Go to * page", "Go to *", "Open * page", "Open *"],
+      callback: (redirectPage) => setRedirectUrl(redirectPage),
+    },
+  ];
+
+  const { transcript } = useSpeechRecognition({ commands });
+  const [redirectUrl, setRedirectUrl] = useState("");
+  const pages = ["home", "login", "register"];
+  const urls = {
+    home: "/",
+    login: "/login",
+    register: "/register",
+    books: "/books",
+    notes: "/notes",
+  };
+
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    return null;
+  }
+
+  let redirect = "";
+
+  if (redirectUrl) {
+    if (pages.includes(redirectUrl)) {
+      redirect = <Redirect to={urls[redirectUrl]} />;
+    } else {
+      redirect = <p>Could not find page: {redirectUrl}</p>;
+    }
+  }
+  
+
   return (
     <div className="App">
-      <div className="container p-4">
-        <Switch>
+      <p id="transcript">Transcript: {transcript}</p>
+      <p id="transcript">Transcript: {transcript}</p>
+      
+      <div align="left" >
+      <button onClick={SpeechRecognition.startListening}><AiFillAudio  size='35px'/></button>
+      </div>
+
+        <BrowserRouter>
           <Route exact path="/" component={HomeWithoutLogin} />
           <Route exact path="/login" component={LoginForm} />
           <Route exact path="/register" component={RegistroForm} />
@@ -37,9 +79,11 @@ function App() {
             path="/account"
             component={() => <HomePage component="ACCOUNT" />}
           />
-          <Route component={NotFound}></Route>
-        </Switch>
-      </div>
+          
+          {redirect}
+        </BrowserRouter>
+      
+
     </div>
   );
 }
