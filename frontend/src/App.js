@@ -19,16 +19,15 @@ function App() {
       callback: (redirectPage) => setRedirectUrl(redirectPage),
     },
   ];
-
   const { transcript } = useSpeechRecognition({ commands });
   const [redirectUrl, setRedirectUrl] = useState("");
-  const pages = ["home", "login", "register"];
+  const pages = ["home", "login", "register","book","know"];
   const urls = {
     home: "/",
     login: "/login",
     register: "/register",
-    books: "/books",
-    notes: "/notes",
+    book: "/books",
+    know: "/notes",
   };
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
@@ -48,11 +47,11 @@ function App() {
 
   return (
     <div className="App">
-      <p id="transcript">Transcript: {transcript}</p>
-      <p id="transcript">Transcript: {transcript}</p>
-      
-      <div align="left" >
-      <button onClick={SpeechRecognition.startListening}><AiFillAudio  size='35px'/></button>
+      <p class="transcript">Transcript: {transcript}</p>
+      <p class="transcript">Transcript: {transcript}</p>
+
+      <div class="micro" align="left" >
+      <button onClick={SpeechRecognition.startListening}><AiFillAudio  size='30px'/></button>
       </div>
 
         <BrowserRouter>

@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.transcript {
+  font-size: smaller;
+  color: rgba(0,0,0,0);
+}
+
+.micro {
+  padding: 10px;
+  margin-bottom: -25px;
+}
