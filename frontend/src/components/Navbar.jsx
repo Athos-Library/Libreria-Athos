@@ -81,9 +81,6 @@ const Navbar = (props) => {
           </Hidden>
           <Hidden xsDown>              
             <div className={classes.navMenu}>
-
-              <button> 
-              <AiFillAudio/></button>
               <LinkS className={classes.submenu}
                     to="home-slider"
                     spy= {true}

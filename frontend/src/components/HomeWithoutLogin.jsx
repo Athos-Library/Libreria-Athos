@@ -158,7 +158,7 @@ export const HomeWithoutLogin = () => {
                   Athos
                 </h1>
                 <p className="home-slider-welcome--phrase animate__animated animate__backInLeft animate__slow">
-                  La nueva plataforma donde podras encontrar de forma libre tus libros, articulos, comics, mangas, 
+                  La nueva plataforma donde podrás encontrar de forma libre tus libros, articulos, comics, mangas, 
                   novelas y mucho más. 
                 </p>
                 <div className="home-slider-welcome--button animate__animated animate__fadeInDown animate__slow">
