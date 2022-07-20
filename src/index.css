@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Times New Roman', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #7ac7ef;
+}
+img{
+  margin: 0;
+}
+
+
+body::-webkit-scrollbar{
+  width: 12px;     /* Tamaño del scroll en vertical */
+  height: 12px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+  background: hsl(222, 13%, 55%);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(222, 13%, 45%);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+  background-color: hsl(222, 13%, 35%);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+  background: hsl(222, 13%, 75%);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+background: hsl(222, 13%, 65%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Arial', monospace;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+a:hover, a:focus {
+  background-size: 100% 2px;
+}
+
+.white-space{
+  white-space: pre-wrap;
+}
+
+/* Formulario de Login y Registro */
+
+.backgroundYellow{
+  background-color: #7ac7ef;
+  width: 100vw;
+  height:calc(100vh - 64px);
+  padding: 1em;
+  text-align: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1em auto;
+  padding: 2em;
+  background-color: #DBDFFD;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px)  {
+  .formLogin{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px)  {
+  .formLogin{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 430px)  {
+  .formLogin{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 380px)  {
+  .formLogin{
+    width: 65%;   
+  }
+}
+
+/* Banner principal */
+
+.home-slider{
+  background: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,1)), url(https://www.bnp.gob.pe/wp-content/uploads/2019/06/CIENCIAS-SOCIALES.jpg);
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: row;
+}
+
+.home-slider-welcome{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+  padding: 0 8%;
+  justify-content: center;
+}
+
+.home-slider-welcome--title{
+  font-size: 64px;
+  color: #60b1dd;
+  line-height: 0%;
+  text-shadow: -2px -2px 2px #000, 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
+}
+
+.home-slider-welcome--phrase{
+  font-size: 32px;
+  color:#fff;
+  margin: 0px;
+  text-shadow: -1.2px -1.2px 1.2px #000, 1.2px 1.2px 1.2px #000, -1.2px 1.2px 1.2px #000, 1.2px -1.2px 1.2px #000;
+}
+
+.home-slider-welcome--button{
+  padding: 30px 0;
+}
+
+.home-slider-image{
+  width: 70%;
+  display: flex;
+}
+
+.home-slider-image img{
+  width: 80%;
+}
+
+@media screen and (max-width: 1024px)  {
+  .home-slider-welcome--title{
+    font-size: 54px;
+  }
+  .home-slider-welcome--phrase{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 720px)  {
+  .home-slider-welcome--title{
+    font-size: 42px;
+  }
+  .home-slider-welcome--phrase{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .home-slider-welcome{
+    width: 75%;
+  }
+  .home-slider-welcome--title{
+    font-size: 52px;
+  }
+  .home-slider-welcome--phrase{
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px)  {
+  .home-slider-welcome{
+    width: 80%;
+  }
+  .home-slider-welcome--title{
+    font-size: 48px;
+  }
+  .home-slider-welcome--phrase{
+    font-size: 24px;
+  }
+}
+
+/* Sección que es Athos */
+.home-what-is-athos{
+  padding: none;
+  margin: 0px;
+  max-width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: row;
+  background-color: #7ac7ef;
+}
+
+.home-what-is-athos-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.home-what-is-athos-text h2{
+  font-size: 48px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #1f5979;
+}
+
+.home-what-is-athos-text p{
+  font-size: 24px;
+  margin: 10px;
+  align-items: center;
+  color: #1f5979;
+}
+
+.home-what-is-athos-image{  
+  width: 100%;
+  margin: 0;
+}
+
+.home-what-is-athos-image__img{
+  width: 100%;
+  display: block;
+}
+.home-what-is-athos-image__img:hover {
+  filter: opacity(.85);
+}
+
+@media screen and (max-width: 720px)  {
+  .home-what-is-athos{
+    padding: 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .home-what-is-athos-image{
+    height: 100%;
+    width: 100%;
+  }
+  .home-what-is-athos-text{
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-what-is-athos-text h2{
+    font-size: 28px;
+  }
+  .home-what-is-athos-text p{
+    font-size: 20px;
+    margin: 0px 0;
+  }
+}
+
+
+@media screen and (max-width: 450px)  {
+  .home-what-is-athos-text{
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Sección de Servicios */
+
+.home-services{
+  padding: 0px;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  background-color: #7ac7ef;
+  justify-content: center;
+}
+
+.home-services__text h2{
+  font-size: 32px;
+  color: #1f5979;
+}
+
+.home-services__text p{
+  font-size: 24px;
+  color: #1f5979;
+}
+
+.home-services__containers{
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 1280px)  {
+  .home-services{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 770px)  {
+  .home-services__text h2{
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  .home-services__text p{
+    font-size: 20px;
+    margin: 0 0;
+  }
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  background-color: #2d20a3;
+}
+
+.footer-social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1em;
+  transition:all .5s ease-in-out;
+}
+
+.footer-social-icons__icon:hover{
+  color: hsl(36, 20%, 69%);
+  transform: scale(1.2);
+}
+
+.carousel{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel__card{
+  height: 250px;
+  min-width: 200px;
+  max-width: 250px;
+  margin: 15px;
+  box-shadow: 0px 2px 4px 2.5px hsla(266, 23%, 20%, 0.3);
+  transition:all 0.3s ease-in-out;
+}
+.carousel__card:hover {
+  -webkit-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+/* Estilos por defecto del propio carousel */
+
+.rec.rec-arrow {
+  cursor:'pointer';
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  cursor:'pointer';
+}
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+/* Tooltip y Speech */
+
+.tooltip{
+  color: #21242b !important;
+}
+
+.rs-container{
+  width: 41px !important;
+}
+.rs-play{
+  background-color: transparent !important;
+  border-radius: 20px !important;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  border: none !important;
+}
+
+.noteButtons__icon--positicon{
+  position: relative;
+  top: 1.8px;   
+}
+
+.noteButtons__icon--size{
+  width: 41px;
+  height: 41px;
+}
