@@ -15,19 +15,19 @@ import NotFound from "./containers/NotFound";
 function App() {
   const commands = [
     {
-      command: ["Go to * page", "Go to *", "Open * page", "Open *"],
+      command: ["Ir a página *", "Ir a *", "Abrir página *", "Abrir *"],
       callback: (redirectPage) => setRedirectUrl(redirectPage),
     },
   ];
   const { transcript } = useSpeechRecognition({ commands });
   const [redirectUrl, setRedirectUrl] = useState("");
-  const pages = ["home", "login", "register","book","know"];
+  const pages = ["inicio", "login", "registro","libros","notas"];
   const urls = {
-    home: "/",
+    inicio: "/",
     login: "/login",
-    register: "/register",
-    book: "/books",
-    know: "/notes",
+    registro: "/register",
+    libros: "/books",
+    notas: "/notes",
   };
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
