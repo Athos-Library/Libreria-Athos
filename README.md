@@ -3,7 +3,7 @@
 ## Grupo 10 - Interacción Humano-Computador CC 451
 
 * Fernando Alonso Zambrano Altamirano
-* Jose Manuel Rios Yamamoto
+* Jose Manuel Yoichi Rios Yamamoto
 * Angel Vidal Larreategui Castro
 
 ## Description
@@ -27,7 +27,7 @@ Aplicación que permite a los usuarios leer libros en línea y navegar entre las
 
   - `cd Athos/backend/`
   
-  - `npm install`
+  - `npm install --force`
   
   - `npm start`
   
@@ -35,6 +35,6 @@ Aplicación que permite a los usuarios leer libros en línea y navegar entre las
 
   - `cd Athos/frontend/`
   
-  - `npm install`
+  - `npm install --force`
   
   - `npm start`
